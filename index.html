@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Megavisor by MEGAVISOR</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Megavisor</h1>
+        <p class="header">Public API</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/MEGAVISOR/megavisor/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/MEGAVISOR/megavisor/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/MEGAVISOR/megavisor">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/MEGAVISOR">MEGAVISOR</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a name="%D0%9F%D1%83%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-api-megavisor" class="anchor" href="#%D0%9F%D1%83%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-api-megavisor"><span class="octicon octicon-link"></span></a>Публичный API MEGAVISOR</h1>
+
+<p>Точка входа <a href="http://megavisor.com/export">http://megavisor.com/export</a></p>
+
+<p>Все методы могут возвращать данные в нескольких форматах:
+<a href="http://megavisor.com/export/*method_name*.*format*">http://megavisor.com/export/*method_name*.*format*</a>
+method_name — имя метода
+format - <strong>json, xml, csv, yaml, xls</strong>
+Например <a href="http://megavisor.com/export/*catalog*.*json*">http://megavisor.com/export/*catalog*.*json*</a> вернет каталог объектов в формате json</p>
+
+<p>Доступные методы</p>
+
+<h2>
+<a name="%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2" class="anchor" href="#%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2"><span class="octicon octicon-link"></span></a>Получение списка объектов</h2>
+
+<h3>
+<a name="get-catalogjson" class="anchor" href="#get-catalogjson"><span class="octicon octicon-link"></span></a>GET /catalog.json</h3>
+
+<p>Возвращает каталог
+<em>Параметры</em></p>
+
+<ul>
+<li>uuid - uuid каталога
+уникальный идентификатор коллекции</li>
+<li>type=sequence|animation|panorama_sequence|panorama|video
+timestamp=asc|desc desc
+rating=asc|desc desc
+name=asc|desc asc
+editor=asc|desc desc
+tags=129,156
+search=Some Search Text
+page=1 - страница для экспорта с 1</li>
+</ul><p><em>Пример</em></p>
+
+<h2>
+<a name="%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0" class="anchor" href="#%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0"><span class="octicon octicon-link"></span></a>Получение отдельного объекта</h2>
+
+<h3>
+<a name="get-viewjson" class="anchor" href="#get-viewjson"><span class="octicon octicon-link"></span></a>GET /view.json</h3>
+
+<p><em>Параметры</em></p>
+
+<p><em>Пример</em></p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
