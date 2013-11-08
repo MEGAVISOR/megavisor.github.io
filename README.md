@@ -7,11 +7,12 @@ Public API
 -------
 
 ### Запрос
-GET http://megavisor.com/export/catalog.%format%
+GET http://megavisor.com/export/catalog.%format%?%params%
 
 где __%format%__ может быть один из — json, xml, csv, yaml, xls
 
-Параметры:
+%params% — GET параметры, param1=val&param2=val
+
 Все параметры являются не обязательными.
 
 | параметр | описание | возможные значения | значение по умолчанию |
