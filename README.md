@@ -64,7 +64,7 @@ items - массив *json* объектов, где:
 ### Пример
 GET http://megavisor.com/export/catalog.json?search=samsung
 ```json
-[
+{
   "items": [
     {
       "uuid": "e908021b-a6fa-4ef5-acb6-c8fd2c526c12",
@@ -90,5 +90,5 @@ GET http://megavisor.com/export/catalog.json?search=samsung
     "pageNumber": 1,
     "totalCount": 575
   }
-]
+}
 ```
